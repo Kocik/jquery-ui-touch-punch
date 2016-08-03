@@ -48,9 +48,9 @@
       window,           // view                       
       1,                // detail                     
       touch.screenX,    // screenX                    
-      touch.screenY,    // screenY                    
-      touch.clientX,    // clientX                    
-      touch.clientY,    // clientY                    
+      touch.screenY,    // screenY          
+      touch.clientX + $(window).scrollLeft(),    // clientX + scrollLeft
+      touch.clientY + $(window).scrollTop(),    // clientY + scrollTop           
       false,            // ctrlKey                    
       false,            // altKey                     
       false,            // shiftKey                   
